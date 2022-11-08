@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "0a327985-3bc5-4c58-982c-e36b64cdac46",
+		"name": "CovidTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15198344"
+	},
+	"item": [
+		{
+			"name": "covid/stats?country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/covid/stats?country=Estonia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"covid",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Estonia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "covid/stats/live?country= Estonia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/covid/stats/live?country=Estonia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"covid",
+						"stats",
+						"live"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Estonia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "covid/stats/history?country= Estonia&status=Confirmed|Deaths",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/covid/stats/history?country=Estonia&status=Confirmed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"covid",
+						"stats",
+						"history"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Estonia"
+						},
+						{
+							"key": "status",
+							"value": "Confirmed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "covid/stats/vaccines?country= Estonia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/covid/stats/vaccines?country=Estonia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"covid",
+						"stats",
+						"vaccines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Estonia"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
